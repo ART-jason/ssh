@@ -16,7 +16,7 @@ public class BeanUtils {
 	public static Method getWriteMethod(Object beanObj, String name) {
 		//使用内省实现（基于java反射专门用于操作bean的属性的api）
 		Method method=null;
-			try { 
+			try {  
 				//1:分析bean对象-->BeanInfo
 				BeanInfo beanInfo = Introspector.getBeanInfo(beanObj.getClass());
 				//2:根据BeanInfo获取所有属性的描述器
